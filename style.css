@@ -1,0 +1,30 @@
+
+
+body{
+    background-color: rgb(60, 60, 60);
+   
+   color: azure;
+   
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+
+   
+    height: 750px;
+     
+}
+
+.hanger{
+    margin-left: 200px;
+    stroke: aliceblue;
+    stroke-width: 5px;
+    fill: gray;
+}
+
+.man{
+   /* display: none;*/    
+}

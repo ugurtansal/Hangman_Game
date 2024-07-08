@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <h1 >Hangman Game</h1>
+
+    <div class="container mt-5">
+        <svg class="hanger" height="300" weight="250">
+            <line x1="20" x2="130" y1="20" y2="20"/>
+            <line x1="130" x2="130" y1="20" y2="100"/>
+            <line x1="20" x2="20" y1="20" y2="300"/>
+            <line x1="0" x2="100" y1="299" y2="299"/>
+
+            <!--Head-->
+            <circle cx="130" cy="70" r="20" class="man" />
+
+            <!--Body-->
+
+            <line x1="130" x2="130" y1="90" y2="175" class="man"/>
+
+            <!--Arms-->
+            <line x1="130" x2="100" y1="125" y2="90" class="man"/>
+
+            <line x1="130" x2="160" y1="125" y2="90" class="man"/>
+
+            <!--Legs-->
+
+            <line x1="130" x2="170"  y1="175" y2="225" class="man"/>
+            <line x1="130" x2="90"  y1="175" y2="225" class="man"/>
+        </svg>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
