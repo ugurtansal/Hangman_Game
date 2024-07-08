@@ -28,3 +28,24 @@ h1{
 .man{
    /* display: none;*/    
 }
+
+#wrongWords{
+    position: absolute;
+    top: 150px;
+    right: 500px;
+}
+
+.words{
+    position: absolute;
+    display: flex;
+    top: 500px;
+    right: 700px;
+}
+
+.letter{
+    display: inline-flex;
+    font-size: 50px;
+    margin: 0 5px;
+    border-bottom: 5px solid yellow;
+    align-items: center;
+}
