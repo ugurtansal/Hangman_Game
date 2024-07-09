@@ -1,6 +1,8 @@
 var wordsScreen=document.getElementById("words");
 var wrongLetters=[];
 var wrongScreen=document.getElementById("wrongWords");
+var man=document.querySelectorAll(".man");
+
 
 var lettersOfWord=[];
 function getRandomWord()
@@ -28,11 +30,12 @@ function writeToScreen(){
     {
         popup.style.display="flex";
     }
-    wrongWriteToScreen();
+    updateWrongs();
 }
 
 
 window.addEventListener("keydown",function(e){
+  if(lettersOfWord.length<=word.length && wrongLetters.length!=7)
     
     if(e.keyCode>=65 && e.keyCode <= 90){
         if(word.indexOf(e.key)!=-1){
@@ -40,7 +43,7 @@ window.addEventListener("keydown",function(e){
             
         }
         else{
-          if(wrongLetters.indexOf(e.key)==-1){
+          if(wrongLetters.indexOf(e.key)==-1 ){
             wrongLetters.push(e.key);
           }
               
@@ -50,11 +53,26 @@ window.addEventListener("keydown",function(e){
 })
 
 
-function wrongWriteToScreen()
+function updateWrongs()
 {
     wrongScreen.innerHTML=wrongLetters;
-}
+    const countWrong=wrongLetters.length;
+    if(countWrong>0){
+         drawMan(countWrong);
+    }
+   
 
+}
+var wrongPopup=document.getElementById("popupContWrong");
+function drawMan(index){
+    if(index==7){
+        wrongPopup.style.display="block";
+        return;
+    }
+    man.item(index-1).style.display="block";
+
+    
+}
 
 
 
