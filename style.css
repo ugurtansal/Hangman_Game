@@ -11,13 +11,6 @@ h1{
     text-align: center;
 }
 
-.container{
-
-   
-    height: 750px;
-     
-}
-
 .hanger{
     margin-left: 200px;
     stroke: aliceblue;
@@ -26,20 +19,22 @@ h1{
 }
 
 .man{
-   /* display: none;*/    
+    display: none;   
 }
 
-#wrongWords{
+#wrongDiv{
     position: absolute;
     top: 150px;
     right: 500px;
 }
 
-.words{
+
+#words{
     position: absolute;
     display: flex;
     top: 500px;
     right: 700px;
+     
 }
 
 .letter{
@@ -48,4 +43,37 @@ h1{
     margin: 0 5px;
     border-bottom: 5px solid yellow;
     align-items: center;
+    margin-top: 50px;
 }
+
+#popupCont{
+    margin-top: 10px;
+    padding-left: 700px;
+    display: none;
+}
+
+#popupContWrong{
+    margin-top: 10px;
+    padding-left: 700px;
+    display: none;
+}
+.popupWrong{
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 0, 0);
+    padding: 20px;
+    color: black;
+}
+
+
+.popup{
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: greenyellow;
+    padding: 20px;
+    color: black;
+ }   
